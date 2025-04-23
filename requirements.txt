@@ -1,0 +1,4 @@
+fastapi>=0.68.0
+uvicorn>=0.15.0
+pydantic>=1.8.2
+fastmcp>=0.1.0  # Assuming this is the package name for FastMCP
