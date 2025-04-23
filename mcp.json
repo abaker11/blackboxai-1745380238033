@@ -1,0 +1,45 @@
+{
+  "schema_version": "v1",
+  "name": "code_explainer",
+  "description": "A tool that explains Python code and SQL queries in plain English",
+  "tools": [
+    {
+      "name": "explain_sql_query",
+      "description": "Explains a Snowflake SQL query in plain English",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The SQL query to explain"
+          }
+        },
+        "required": ["query"]
+      },
+      "returns": {
+        "type": "string",
+        "description": "A plain English explanation of what the query does"
+      }
+    },
+    {
+      "name": "explain_python_code",
+      "description": "Provides a line-by-line explanation of Python code",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "The Python code snippet to explain"
+          }
+        },
+        "required": ["code"]
+      },
+      "returns": {
+        "type": "string",
+        "description": "A line-by-line explanation in plain English"
+      }
+    }
+  ],
+  "contact": "example@example.com",
+  "version": "1.0.0"
+}
